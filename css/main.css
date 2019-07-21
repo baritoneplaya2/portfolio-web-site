@@ -9,7 +9,7 @@ body {
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding-bottom: 1.5em;
 }
 
 a {
@@ -53,6 +53,7 @@ h1 {
 
 h2 {
   margin: -5px 0 0;
+  font-size: 1em;
 }
 
 
@@ -90,14 +91,15 @@ FOOTER
 **********************/
 
 footer {
-  position: fixed;
-  left: 0;
+  position: relative;
+  right: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   text-align: center;
   font-size: 0.9em;
   clear: both;
-  padding-top: 10px;
+  padding: .5em;
 }
 
 .social-icon {
@@ -112,9 +114,9 @@ footer {
 PAGE: PORTFOLIO
 **********************/
 
-#artwork li {
+#menu li {
   font-weight: 800;
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
@@ -145,10 +147,10 @@ PAGE: LOGOS
 
 #gallery li p {
   margin: 0;
-  padding: 5%;
+  padding: 2.5%;
   font-size: 0.75em;
-  color: #000;
   text-align: center;
+  color: #000;
   background-color: #eee;
   border-radius: 10%;
 }
@@ -247,12 +249,18 @@ nav a.selected, nav a:hover {
   color: #663399;
 }
 
-/*portfolio list*/
-#artwork li a:hover {
+/*portfolio menu*/
+#menu li a:hover {
   color: #dda0dd;
 }
 
-/*portfolio list*/
+/*logo description*/
+#gallery li p {
+  color: #000;
+  background-color: #eee;
+}
+
+/*footer*/
 footer {
   color: #fff;
   background-color: rgba(221, 160, 221, .5);
