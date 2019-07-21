@@ -169,6 +169,12 @@ PAGE: ABOUT
   border-radius: 20%;
 }
 
+#about {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
 
 
 /**********************
@@ -199,21 +205,9 @@ PAGE: CONTACT
 .contact-info a {
   display: block;
   min-height: 20px;
-  padding: 0 20px;
-  margin: 5px 10px;
+  padding: 2.5%;
+  margin: 2.5%;
   font-weight: bold;
-}
-
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
-}
-
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
 }
 
 
@@ -265,6 +259,10 @@ nav a.selected, nav a:hover {
 
 /*portfolio menu*/
 #menu li a:hover {
+  color: #dda0dd;
+}
+
+#link:hover {
   color: #dda0dd;
 }
 

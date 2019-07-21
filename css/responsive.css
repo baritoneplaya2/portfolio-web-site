@@ -13,24 +13,28 @@ HEADER
   }
 
 /**********************
-TWO COLUMN LAYOUT
+PAGE: CONTACT
 **********************/
   
   #primary, #secondary {
-    width: 40%;
-    margin: 2.5%;
+    display: inline-block; 
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 2.5%;
+    font-size: 1em;
 }
 
   #primary {
-    float: left;
     text-align: left;
-    padding-left: 2.5%;
   }
   
   #secondary {
-    float: right;
-    text-align: right;
-    padding-right: 2.5%;
+    text-align: left;
+  }
+
+  #wrapper p {
+    text-align: left;
+    position: relative;
   }
   
   /**********************
@@ -54,16 +58,14 @@ PAGE: ABOUT
     margin: 0 5% 80px 0;
   }
   
-}
 
 /**********************
-footer
+FOOTER
 *********************/
   
-  #foot {
-    position: absolute;
+  footer {
+    bottom: 0;
   }
-  
 }
 @media screen and (min-width: 660px) {
   
@@ -72,7 +74,6 @@ HEADER
 *********************/
   
   nav {
-/*    background: none;*/
     float: right;
     font-size: 0.9em;
     margin-right: 5%;
