@@ -10,21 +10,27 @@ HEADER
   
   h2 {
     font-size: 1.25em;
-    margin: -3% 5px;
   }
 
 /**********************
 TWO COLUMN LAYOUT
 **********************/
   
+  #primary, #secondary {
+    width: 40%;
+    margin: 2.5%;
+}
+
   #primary {
-    width: 50%;
     float: left;
+    text-align: left;
+    padding-left: 2.5%;
   }
   
   #secondary {
-    width: 40%;
     float: right;
+    text-align: right;
+    padding-right: 2.5%;
   }
   
   /**********************
@@ -50,6 +56,15 @@ PAGE: ABOUT
   
 }
 
+/**********************
+footer
+*********************/
+  
+  #foot {
+    position: absolute;
+  }
+  
+}
 @media screen and (min-width: 660px) {
   
 /**********************
@@ -57,18 +72,20 @@ HEADER
 *********************/
   
   nav {
-    background: none;
+/*    background: none;*/
     float: right;
     font-size: 0.9em;
     margin-right: 5%;
     margin-top: 1%;
     text-align: right;
     width: 45%;
+    display: block;
   }
   
   #logo {
     float: left;
     margin-left: 5%;
+    margin-top: 1%;
     text-align: left;
     width: 45%;
   }
@@ -87,9 +104,6 @@ HEADER
     margin-bottom: 60px;
   }
   
-  nav li {
-  display: block;
-  }
 }
 
 @media screen and (min-width: 924px) {
