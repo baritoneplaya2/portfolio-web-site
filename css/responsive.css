@@ -9,7 +9,7 @@ HEADER
   }
   
   h2 {
-    font-size: 1.25em;
+    font-size: 1.3em;
   }
 
 /**********************
@@ -19,16 +19,9 @@ PAGE: CONTACT
   #primary, #secondary {
     display: inline-block; 
     width: 45%;
-    margin: 0 2.5%;
-    padding: 2.5%;
+    padding: 2%;
     font-size: 1em;
-  }
-
-  #primary {
-    text-align: left;
-  }
-  
-  #secondary {
+    margin: 0;
     text-align: left;
   }
 
@@ -41,14 +34,14 @@ PAGE: CONTACT
 PAGE: PORTFOLIO
 *********************/
   
-  #gallery li {
-    width: 28.3333%;
+  #paintings #gallery li {
+    padding: 5px;
+    margin: 0;
+    width: 20%;
+    clear: none;
+    display: inline-block;
   }
-  
-  #gallery li:nth-child(4n){
-    clear: left;
-  }
-  
+
 /**********************
 PAGE: ABOUT
 *********************/
@@ -63,9 +56,10 @@ PAGE: ABOUT
 FOOTER
 *********************/
   
-  footer {
-    bottom: 0;
+  #mainfoot {
+    position: fixed;
   }
+
 }
 @media screen and (min-width: 660px) {
   
@@ -75,11 +69,11 @@ HEADER
   
   nav {
     float: right;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-right: 5%;
     margin-top: 1%;
     text-align: right;
-    width: 45%;
+    width: 15%;
     display: block;
   }
   
@@ -88,33 +82,110 @@ HEADER
     margin-left: 5%;
     margin-top: 1%;
     text-align: left;
-    width: 45%;
+    width: 50%;
   }
   
  h1 {
-    font-size: 2.5em;
+    font-size: 2.55em;
   }
   
   h2 {
-    font-size: 1.25em;
-    margin: -3% 5px;
+    font-size: 1.3em;
+    margin: 2% 0;
   }
   
   header {
     border-bottom: 5px solid #663399;
     margin-bottom: 60px;
   }
+
+  /**********************
+PAGE: CONTACT
+**********************/
+  
+  #primary, #secondary {
+    display: inline-block; 
+    width: 45%;
+    padding: 2%;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: left;
+    top: 0;
+  }
+
+  h3 {
+    padding-left: 10px;
+  }
+
+  #wrapper p {
+    text-align: left;
+  }
+
+  /**********************
+PAGE: ABOUT
+*********************/
+  
+  .profile-photo {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    border-radius: 20%;
+    display: inline-block;
+  }
+
+  #about {
+    text-align: left;
+    margin: auto;
+    width: 80%;
+  }
+
+  #about p{
+    padding-left: 20px;
+    width: 50%;
+    display: inline-block;
+  }
+
+    /**********************
+PAGE: PORTFOLIO
+*********************/
+  
+  #paintings #gallery li {
+    width: 40%;
+    padding: 0 5%;
+  }
+
+  #digital p {
+    max-width: 70%;
+  }
   
 }
 
-@media screen and (min-width: 924px) {
+@media screen and (min-width: 882px) {
 
 /**********************
 HEADER
 *********************/
   
+  header {
+    float: center;
+  }
+
+  #logo, nav {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
   h2 {
-    padding-top: 15px;
+    font-size: 2em;
+  }
+
+  nav li{
+    display: inline-block;
   }
 
 }
