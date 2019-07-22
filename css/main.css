@@ -6,11 +6,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#wrapper {
-  max-width: 940px;
+/*#wrapper {
+  size: auto;
   margin: auto;
   padding-bottom: 1.5em;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -103,21 +103,21 @@ footer {
   padding: .5em;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
 
 
 /**********************
 PAGE: PORTFOLIO
 **********************/
 
+#menu{ 
+  width: 80%;
+  margin: 0 5%;
+  padding: 5%;
+}
+
 #menu li {
   font-weight: 800;
-  padding: 10px 10px;
+  padding: 20px 0;
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
@@ -126,9 +126,9 @@ PAGE: PORTFOLIO
 
 
 
-/**********************
-PAGE: LOGOS
-**********************/
+/***************************
+PAGE: LOGOS/INVITATIONS/ETC
+***************************/
 
 #gallery {
   margin: 0;
@@ -154,6 +154,10 @@ PAGE: LOGOS
   color: #000;
   background-color: #eee;
   border-radius: 10%;
+}
+
+#butterfly {
+  padding-top: 80px;
 }
 
 
@@ -190,6 +194,7 @@ PAGE: CONTACT
 #primary p, #secondary p {
   font-size: 1em;
   margin-bottom: 5%;
+  padding: 0 5%;
 }
 
 #primary h3, #secondary h3 {
@@ -200,15 +205,20 @@ PAGE: CONTACT
 .contact-info {
   list-style: none;
   font-size: 0.9em;
+  padding: 0 5%;
 }
 
 .contact-info a {
-  display: block;
+  display: inline-block;
   min-height: 20px;
-  padding: 2.5%;
-  margin: 2.5%;
   font-weight: bold;
 }
+
+.contact-info li {
+  padding: 1% 0;
+}
+
+
 
 
 
