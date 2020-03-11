@@ -176,9 +176,10 @@ HEADER
   }
 
   #logo, nav {
+    display: block;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 15px 0px;
   }
 
   h1 {
@@ -189,8 +190,15 @@ HEADER
     font-size: 2em;
   }
 
-  nav li{
-    display: inline-block;
+  nav li {
+    display: block;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+
+  nav a {
+    padding: 0px;
+    margin: 0px;
   }
 
 }

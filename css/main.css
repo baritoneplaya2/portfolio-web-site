@@ -4,6 +4,8 @@ GENERAL
 
 body {
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 /*#wrapper {
@@ -33,7 +35,7 @@ HEADING
 header{
   float: left;
   top: 0;
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0;
   width: 100%;
   border-bottom: 5px solid;
@@ -92,12 +94,14 @@ FOOTER
 **********************/
 
 footer {
-  position: relative;
-  right: 0;
+  position: absolute;
+  display: inline;
+  align-items: center;
   bottom: 0;
   left: 0;
+  height: 50px;
   width: 100%;
-  text-align: center;
+  margin: auto;
   font-size: 0.9em;
   clear: both;
   padding: .5em;
@@ -109,7 +113,7 @@ footer {
 PAGE: PORTFOLIO
 **********************/
 
-#menu{ 
+#menu { 
   width: 80%;
   margin: 0 5%;
   padding: 5%;
@@ -166,6 +170,10 @@ PAGE: LOGOS/INVITATIONS/ETC
 PAGE: ABOUT
 **********************/
 
+#wrapper {
+  padding: 0 20px;
+}
+
 .profile-photo {
   display: block;
   max-width: 150px;
@@ -174,52 +182,36 @@ PAGE: ABOUT
 }
 
 #about {
-  text-align: left;
+  display: block;
+  text-align: center;
   margin: auto;
   width: 90%;
 }
 
+#about p {
+  margin: 0;
+  padding: 0;
+}
 
+.selfphoto {
+  display: block;
+  text-align: left;
+}
 
 /**********************
 PAGE: CONTACT
 **********************/
-
-#primary, #secondary {
-  text-align: left;
-  margin: auto;
-  width: 90%;
+#contactform {
+  display: block;
+  text-align: center;
 }
 
-#primary p, #secondary p {
-  font-size: 1em;
-  margin-bottom: 5%;
-  padding: 0 5%;
+iframe {
+  width: 640px;
+  height: 800px;
+  border: none;
+  margin: 0;
 }
-
-#primary h3, #secondary h3 {
-  font-size: 1.25em;
-  margin-bottom: 5%;
-}
-
-.contact-info {
-  list-style: none;
-  font-size: 0.9em;
-  padding: 0 5%;
-}
-
-.contact-info a {
-  display: inline-block;
-  min-height: 20px;
-  font-weight: bold;
-}
-
-.contact-info li {
-  padding: 1% 0;
-}
-
-
-
 
 
 /**********************
