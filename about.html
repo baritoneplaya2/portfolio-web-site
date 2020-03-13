@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Maria Vanessa Moreno | Graphic & Web Designer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans+Condensed:300,700|Open+Sans:400,400i,700,700i,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Maria Vanessa Moreno</h1>
-        <h2>Graphic & Web Designer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html" class="selected">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    {% extends "base.html" %}
+
+    {% block content %}
+
     <div id="wrapper">
       <aside id="selfphoto">
         <img src="img/vanessa.jpg" alt="Photograph of Maria Vanessa Moreno" class="profile-photo">
@@ -31,12 +13,12 @@
         <h3>About</h3>
         <p>Hi, I'm Maria Vanessa. Welcome to my online portfolio, designed by me! Here you can check out many different designs I've done, by hand and digitally.</p>
         <br>
-        <br>
         <p>If you'd like to follow my art, please see my <a href="contact.html" id="link"><strong>contact</strong></a> page for all the social media and platforms.</p>
       </section>
     </div>
-    <footer id=mainfoot>
+
+    {% endblock %}
+<!--     <footer id=mainfoot>
       <p>&copy; 2019 Maria Vanessa Moreno.</p>
-    </footer>
-  </body>
+    </footer> -->
 </html>

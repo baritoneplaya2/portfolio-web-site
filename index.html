@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Maria Vanessa Moreno | Graphic & Web Designer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans+Condensed:300,700|Open+Sans:400,400i,700,700i,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Maria Vanessa Moreno</h1>
-        <h2>Graphic & Web Designer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    {% extends "base.html" %}
+
+    {% block content %}
+
     <div id="wrapper">
       <section>
         <ul id="menu">
@@ -30,12 +12,11 @@
           <li><a href="invitations.html">Invitations</a></li>
           <li><a href="paintings_drawings.html">Paintings/Drawings</a></li>
           <li><a href="digitalart_typography.html">Digital Art/Typography</a></li>
-          <li><a href="other.html">Other</a></li>
+          <li><a href="code.html">Code</a></li>
         </ul>
       </section>
     </div>
-    <footer id=mainfoot>
-      <p>&copy; 2019 Maria Vanessa Moreno.</p>
-    </footer>
-  </body>
+
+    {% endblock %}
+
 </html>
