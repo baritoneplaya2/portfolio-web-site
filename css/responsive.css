@@ -103,22 +103,23 @@ HEADER
 PAGE: CONTACT
 **********************/
   
-  #primary, #secondary {
-    display: inline-block; 
-    width: 45%;
-    padding: 2%;
-    font-size: 1.2em;
+  #contactform {
+    display: block;
+    text-align: center;
+  }
+
+  iframe {
+    width: 440px;
+    height: 600px;
+    border: none;
     margin: 0;
-    text-align: left;
-    top: 0;
   }
 
-  h3 {
-    padding-left: 10px;
-  }
-
-  #wrapper p {
-    text-align: left;
+  iframe {
+    width: 640px;
+    height: 800px;
+    border: none;
+    margin: 0;
   }
 
   /**********************
@@ -199,6 +200,22 @@ HEADER
   nav a {
     padding: 0px;
     margin: 0px;
+  }
+
+  /**********************
+PAGE: CONTACT
+**********************/
+  
+  #contactform {
+    display: block;
+    text-align: center;
+  }
+
+  iframe {
+    width: 640px;
+    height: 800px;
+    border: none;
+    margin: 0;
   }
 
 }

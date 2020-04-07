@@ -172,13 +172,15 @@ PAGE: ABOUT
 
 #wrapper {
   padding: 0 20px;
+  display: block;
+  text-align: center;
 }
 
 .profile-photo {
-  display: block;
   max-width: 150px;
-  margin: 0 auto 30px;
+  margin: 0;
   border-radius: 20%;
+  padding: 10px;
 }
 
 #about {
@@ -190,7 +192,7 @@ PAGE: ABOUT
 
 #about p {
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .selfphoto {
@@ -204,13 +206,17 @@ PAGE: CONTACT
 #contactform {
   display: block;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 iframe {
-  width: 640px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   border: none;
   margin: 0;
+  padding: 15px;
 }
 
 
@@ -226,15 +232,15 @@ body {
 
 /* header color */
 header {
-  background: #dda0dd;
+  background: #FF69B4;
   border-color: #663399;
 }
 
 /*nav background on mobile*/
-nav {
+/*nav {
   background: #dda0dd;
 }
-
+*/
 /*logo text*/
 h1 {
   color: #fff;
